@@ -1,0 +1,11 @@
+# Ignorar caché de Angular
+frontend-estetica/.angular/
+
+# Ignorar node_modules
+frontend-estetica/node_modules/
+
+# Ignorar archivos de logs
+*.log
+
+# Ignorar archivos de sistema
+.DS_Store
