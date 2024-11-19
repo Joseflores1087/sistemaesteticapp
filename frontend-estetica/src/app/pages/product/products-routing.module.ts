@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
-import { ListClientsComponent } from './list-clients/list-clients.component';
+import { ListProductsComponent } from './list-products/list-products.component';
 
 const routes: Routes = [
-  { path: 'list-client', component: ListClientsComponent },
+  { path: 'list-product', component: ListProductsComponent },
 ];
 
 @NgModule({
@@ -12,4 +12,4 @@ const routes: Routes = [
   imports: [CommonModule, RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class ClientsRoutingModule {}
+export class ProductsRoutingModule {}

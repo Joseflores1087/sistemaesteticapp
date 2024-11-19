@@ -1,4 +1,5 @@
-# Balanza Systel WEB  
+# Sistema Esteticaweb
+##Repositorio Frontend y Backend 
 
 ## Prerequisites to develop
 * [NodeJS 16.5.0](https://nodejs.org/)
