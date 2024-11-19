@@ -10,13 +10,13 @@ export class SidebarService {
       icon: 'nav-icon fas fa-th',
       submenu: [
         {
-          titulo: 'Depilacion',
-          url: 'productos',
+          titulo: 'listado',
+          url: '/treatments/list-treatments',
         },
-        {
-          titulo: 'Uñas',
-          url: 'productos',
-        },
+        // {
+        //   titulo: 'Uñas',
+        //   url: 'productos',
+        // },
       ],
     },
     {
@@ -24,13 +24,13 @@ export class SidebarService {
       icon: 'nav-icon fas fa-tag',
       submenu: [
         {
-          titulo: 'Pintura Uñas',
-          url: 'productos',
+          titulo: 'Stock',
+          url: '/product/list-product',
         },
-        {
-          titulo: 'Pestañas',
-          url: 'productos',
-        },
+        // {
+        //   titulo: 'Pestañas',
+        //   url: 'productos',
+        // },
       ],
     },
     {
@@ -39,28 +39,28 @@ export class SidebarService {
       submenu: [
         {
           titulo: 'Listar',
-          url: '/clientes/listar',
+          url: '/users/list-users',
         },
-        {
-          titulo: 'Crear',
-          url: '/clientes/nuevo',
-        },
+        // {
+        //   titulo: 'Crear',
+        //   url: '/product/nuevo',
+        // },
       ],
     },
     {
       titulo: 'Clientes',
       icon: 'nav-icon fas fa-users',
-      url: '/clientes/listar',
+      url: '/clientes/list-client',
     },
     {
       titulo: 'Reportes',
       icon: 'nav-icon fas fa-print',
-      url: '/clientes/listar',
+      url: '/reports/reports',
     },
     {
       titulo: 'Turnos',
       icon: 'nav-icon fas fa-calendar',
-      url: '/clientes/listar',
+      url: '/shifts/list',
     },
   ];
   constructor() {}
