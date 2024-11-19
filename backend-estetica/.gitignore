@@ -1,0 +1,25 @@
+# Ignorar la carpeta node_modules
+node_modules/
+
+# Otros archivos que podrías querer ignorar
+npm-debug.log
+yarn-error.log
+.env
+dist/
+coverage/
+*.log
+# Ignorar la carpeta node_modules
+node_modules/
+
+# Ignorar archivos y carpetas específicos en backend-estetica
+backend-estetica/.env
+backend-estetica/node_modules/.package-lock.json
+backend-estetica/package-lock.json
+backend-estetica/package.json
+
+# Otros archivos comunes a ignorar
+npm-debug.log
+yarn-error.log
+dist/
+coverage/
+*.log
