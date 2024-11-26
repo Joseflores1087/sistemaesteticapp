@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 
 @Component({
@@ -7,10 +8,25 @@ import { Router } from '@angular/router';
   styleUrls: ['./login.component.css'],
 })
 export class LoginComponent implements OnInit {
-  constructor(private router: Router) {}
+  loginForm: FormGroup;
+  constructor(private router: Router, private fb: FormBuilder) {
+    this.loginForm = this.fb.group({
+      email: ['', [Validators.required, Validators.email]],
+      password: ['', Validators.required],
+    });
+  }
 
   ngOnInit(): void {}
   onLogin() {
-    this.router.navigateByUrl('/pages');
+    if (this.loginForm.valid) {
+      const { email, password } = this.loginForm.value;
+      console.log('Email:', email);
+      console.log('Password:', password);
+      this.router.navigateByUrl('/pages');
+      // Falta la llamada a los servicios
+    } else {
+      this.router.navigateByUrl('/pages');
+      this.loginForm.markAllAsTouched();
+    }
   }
 }
