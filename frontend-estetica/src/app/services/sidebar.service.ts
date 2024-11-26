@@ -27,10 +27,10 @@ export class SidebarService {
           titulo: 'Stock',
           url: '/product/list-product',
         },
-        // {
-        //   titulo: 'Pestañas',
-        //   url: 'productos',
-        // },
+        {
+          titulo: 'Catagoría',
+          url: 'categories/list',
+        },
       ],
     },
     {
