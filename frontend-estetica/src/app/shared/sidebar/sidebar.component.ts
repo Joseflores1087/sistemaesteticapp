@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { SidebarService } from 'src/app/services/sidebar.service';
 
+declare var $: any;
 @Component({
   selector: 'app-sidebar',
   templateUrl: './sidebar.component.html',
@@ -11,5 +12,7 @@ export class SidebarComponent implements OnInit {
   constructor(private sidebar: SidebarService) {
     this.menu = this.sidebar.menu;
   }
-  ngOnInit(): void {}
+  ngOnInit() {
+    $('[data-widget="treeview"]').Treeview('init');
+  }
 }

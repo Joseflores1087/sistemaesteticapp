@@ -39,7 +39,7 @@ export class SidebarService {
       submenu: [
         {
           titulo: 'Listar',
-          url: '/users/list-users',
+          url: 'users/list-users',
         },
         // {
         //   titulo: 'Crear',
@@ -50,17 +50,17 @@ export class SidebarService {
     {
       titulo: 'Clientes',
       icon: 'nav-icon fas fa-users',
-      url: '/clientes/list-client',
+      url: 'clientes/list-client',
     },
     {
       titulo: 'Reportes',
       icon: 'nav-icon fas fa-print',
-      url: '/reports/reports',
+      url: 'reports/reports',
     },
     {
       titulo: 'Turnos',
       icon: 'nav-icon fas fa-calendar',
-      url: '/shifts/list',
+      url: 'shifts/list',
     },
   ];
   constructor() {}
