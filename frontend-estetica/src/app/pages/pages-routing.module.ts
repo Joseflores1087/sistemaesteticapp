@@ -42,6 +42,13 @@ const routes: Routes = [
             (x) => x.TreatmentsModule
           ),
       },
+      {
+        path: 'categories',
+        loadChildren: () =>
+          import('./categories/categories.module').then(
+            (x) => x.CategoriesModule
+          ),
+      },
     ],
   },
   // {
