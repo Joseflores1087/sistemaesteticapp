@@ -11,12 +11,16 @@ export class SidebarService {
       submenu: [
         {
           titulo: 'listado',
-          url: '/treatments/list-treatments',
+          url: 'treatments/list-treatments',
         },
-        // {
-        //   titulo: 'Uñas',
-        //   url: 'productos',
-        // },
+        {
+          titulo: 'Reportes',
+          url: 'treatments/report-treatments',
+        },
+        {
+          titulo: 'Agenda',
+          url: 'treatments/diary',
+        },
       ],
     },
     {
@@ -25,11 +29,15 @@ export class SidebarService {
       submenu: [
         {
           titulo: 'Stock',
-          url: '/product/list-product',
+          url: 'product/stock-product',
         },
         {
-          titulo: 'Catagoría',
+          titulo: 'Categoría',
           url: 'categories/list',
+        },
+        {
+          titulo: 'Reporte de productos',
+          url: 'product/report-products',
         },
       ],
     },
@@ -41,10 +49,14 @@ export class SidebarService {
           titulo: 'Listar',
           url: 'users/list-users',
         },
-        // {
-        //   titulo: 'Crear',
-        //   url: '/product/nuevo',
-        // },
+        {
+          titulo: 'Crear',
+          url: 'users/add-users',
+        },
+        {
+          titulo: 'Reporte de usuarios',
+          url: 'users/report-users',
+        },
       ],
     },
     {

@@ -6,12 +6,9 @@ import { PagesRoutingModule } from './pages-routing.module';
 
 import { HomeComponent } from './home/home.component';
 import { PagesComponent } from './pages.component';
-import { NoPagesComponent } from './no-pages/no-pages.component';
-import { ListCategoriesComponent } from './categories/list-categories/list-categories.component';
-import { AddCategoriesComponent } from './categories/add-categories/add-categories.component';
 
 @NgModule({
-  declarations: [PagesComponent, HomeComponent, ListCategoriesComponent, AddCategoriesComponent],
+  declarations: [PagesComponent, HomeComponent],
   exports: [HomeComponent, PagesComponent],
   imports: [CommonModule, SharedModule, RouterModule, PagesRoutingModule],
 })
