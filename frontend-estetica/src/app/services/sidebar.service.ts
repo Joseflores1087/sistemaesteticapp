@@ -29,7 +29,7 @@ export class SidebarService {
       submenu: [
         {
           titulo: 'Stock',
-          url: 'product/stock-product',
+          url: 'product/list-product',
         },
         {
           titulo: 'Categoría',

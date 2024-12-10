@@ -1,0 +1,135 @@
+<section class="content mt-4">
+  <div class="container-fluid mt-2 mb-4 me-4 ms-2">
+    <div class="col-md-12">
+      <!-- general form elements disabled -->
+      <!-- <div class="card"> -->
+      <!-- <div class="card-header"> -->
+      <!-- <h3 class="card-title">Tratamientos</h3> -->
+    </div>
+    <!-- /.card-header -->
+
+    <form [formGroup]="clientForm" (ngSubmit)="onSubmit()">
+      <div class="row">
+        <div class="col-sm-6">
+          <!-- text input -->
+          <div class="form-group">
+            <label>Nombre</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Nombre"
+              formControlName="name"
+            />
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="form-group">
+            <label>Apellido</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Apellido"
+              formControlName="apellido"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-8">
+          <div class="form-group">
+            <label>Email</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Ejemplo@..."
+              formControlName="email"
+            />
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <!-- select -->
+          <div class="form-group">
+            <label>Telefono | Celular</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder=""
+              formControlName="telefono"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="form-group">
+            <label>Fecha nacimiento</label>
+            <input
+              type="date"
+              class="form-control"
+              placeholder=""
+              formControlName="fechaNacimiento"
+            />
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <!-- select -->
+          <div class="form-group">
+            <label>DNI</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder=""
+              formControlName="dni"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-7">
+          <!-- select -->
+          <div class="form-group">
+            <label>Dirección</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder=""
+              formControlName="direccion"
+            />
+          </div>
+        </div>
+        <div class="col-sm-12">
+          <!-- textarea -->
+          <div class="form-group">
+            <label>Observación</label>
+            <textarea
+              class="form-control"
+              rows="3"
+              placeholder=""
+              formControlName="observation"
+            ></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="">
+        <button type="submit" class="btn btn-danger me-2" mat-dialog-close>
+          Atras
+        </button>
+        <button
+          type="submit"
+          class="btn btn-primary"
+          style="margin-left: 1rem"
+          [disabled]="clientForm.invalid"
+        >
+          Agregar
+        </button>
+      </div>
+    </form>
+
+    <!-- /.card-body -->
+    <!-- </div> -->
+    <!-- /.card -->
+
+    <!-- /.card -->
+  </div>
+  <!-- </div> -->
+</section>
