@@ -3,6 +3,7 @@ frontend-estetica/.angular/
 
 # Ignorar node_modules
 frontend-estetica/node_modules/
+backend-estetica/node_modules/*
 
 # Ignorar archivos de logs
 *.log
@@ -13,3 +14,4 @@ backend-estetica/.env
 backend-estetica/node_modules/.package-lock.json
 backend-estetica/package-lock.json
 
+backend-estetica/node_modules/mime/cli.js
